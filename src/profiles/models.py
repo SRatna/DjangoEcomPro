@@ -6,7 +6,6 @@ from django.db import models
 
 class profile(models.Model):
     name = models.CharField(max_length=200)
-    location = models.CharField(max_length=200, default='myLocation')
     description = models.TextField(default='description text')
 
     def __unicode__(self):
